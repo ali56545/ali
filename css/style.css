@@ -1,0 +1,159 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* Header style start*/
+.header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.header-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-item {
+    margin-right: 82px;
+}
+.header-item:last-child{
+    margin-right: 0;
+}
+.header-link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-link:hover{
+opacity: 75%;
+}
+.header-link:active{
+    opacity: 75%;
+}
+.header-link:focus{
+    opacity: .75;
+}
+/*header style end */
+
+
+/*intro style start*/
+
+.intro{
+    min-height: 100vh;
+    background: url(../img/Hero.png)no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+
+}
+
+.intro-title{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    max-width: 619px;
+    margin-bottom: 22px;
+}
+.intro-subtitle {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;   
+color: white;
+width: 546px;
+height: 72px;
+top: 406px;
+left: 191px;
+gap: 0px;
+opacity: 0px;
+margin-bottom: 59px;
+}
+.search-from-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-form-field{
+    width: 297px;
+    background-color: transparent;
+    background: url(../img/svg/Oval.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid white;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+
+}
+.search-form-field::placeholder{
+    color: white;
+}
+
+.search-from-submit{
+    padding: 15px 40px;
+    text-transform: uppercase;
+    width: 171px;
+height: 58px;
+top: 532px;
+left: 906px;
+gap: 0px;
+opacity: 0px;
+background: #1B7DFF;
+border: 0;
+color: white;
+
+}
+.search-from-submit:hover,.search-from-submit:focus,.search-from-submit:active{
+    background:#0c58bc;
+}
